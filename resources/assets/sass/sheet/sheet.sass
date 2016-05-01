@@ -1,0 +1,85 @@
+div
+  //border: 1px dashed #1e1e1e
+
+.container
+  display: flex
+  flex-direction: column
+
+  div
+    display: flex
+
+  > .character
+    background: rgba(0, 255, 0, 0.3)
+    flex: 1
+
+    > .name
+      flex: 1
+
+    > .info
+      flex: 2
+      flex-direction: column
+
+      > .row > div
+        flex: 1
+
+  > .body
+    flex: 1
+
+    > div
+      flex-direction: column
+
+    > .leftColumn
+      flex: 1
+
+      > .groupContainer
+
+        > .stats
+          flex: 1
+          flex-direction: column
+          background: rgba(100, 100, 100, 1)
+
+          > .stat
+            flex-direction: column
+            flex: 1
+            align-items: center
+
+        > .groupContainer
+          flex: 2
+          flex-direction: column
+
+          > .inspiration
+            flex: 1
+
+          > .proficiency
+            flex: 1
+
+          > .savingThrows
+            flex: 6
+
+          > .skills
+            flex: 18
+
+    > .middleColumn
+      flex: 1
+
+      > .statusBlock
+        flex-direction: column
+
+        > .groupContainer
+          flex: 1
+
+          > div
+            flex: 1
+
+      > .attacks
+        flex: 1
+
+      > .equipment
+        flex: 1
+
+    > .rightColumn
+      flex: 1
+
+      > .roleplayingBlock
+        flex: 1
+        flex-direction: column

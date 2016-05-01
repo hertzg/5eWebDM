@@ -1,0 +1,56 @@
+include mixins/laravel-blade-mixin
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    link(rel="stylesheet" href="css/sheet.css")
+    title Print Sheet
+  body
+    .container
+      .character
+        .name Vic
+        .info
+          .row
+            .class Druid lv.8
+            .background Hermit
+            .player Hertz
+          .row
+            .race Half-Elf
+            .alignment Chaotic Neutral
+            .experience 7490
+      .body
+        .leftColumn
+          .groupContainer
+            .stats Stats
+              - for(var i=0; i<6; i++)
+                .stat
+                  .name STAT
+                  .modifier= Math.floor((Math.round(Math.random()*10)%20-10)/2)
+                  .score= Math.round(Math.random()*10)%20
+            .groupContainer
+              .inspiration Inspiration
+              .proficiency Proficiency bonus
+              .savingThrows Saving Throws
+              .skills Skills
+          .passivePerception Passive Wisdom (Perception)
+          .proficiencies Proficiencies
+        .middleColumn
+          .statusBlock.groupContainer
+            .groupContainer
+              .armorClass AC
+              .initiative Initiative
+              .speed Speed
+            .hitPoints HP
+            .temporaryHitpoints Temporary Hit Points
+            .groupContainer
+              .hitDice Hit Dice
+              .deathSaves Death Saves
+          .attacks Attacks
+          .equipment Equipment
+        .rightColumn
+          .roleplayingBlock.groupContainer
+            .personality Personality
+            .ideals Ideals
+            .bonds Bonds
+            .flaws Flaws
+          .traits Traits

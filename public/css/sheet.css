@@ -1,0 +1,121 @@
+.container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .container div {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .container > .character {
+    background: rgba(0, 255, 0, 0.3);
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+    .container > .character > .name {
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
+    .container > .character > .info {
+      -webkit-flex: 2;
+      -ms-flex: 2;
+      flex: 2;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .container > .character > .info > .row > div {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1; }
+  .container > .body {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+    .container > .body > div {
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+    .container > .body > .leftColumn {
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
+      .container > .body > .leftColumn > .groupContainer > .stats {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        background: #646464; }
+        .container > .body > .leftColumn > .groupContainer > .stats > .stat {
+          -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-flex: 1;
+          -ms-flex: 1;
+          flex: 1;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center; }
+      .container > .body > .leftColumn > .groupContainer > .groupContainer {
+        -webkit-flex: 2;
+        -ms-flex: 2;
+        flex: 2;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        .container > .body > .leftColumn > .groupContainer > .groupContainer > .inspiration {
+          -webkit-flex: 1;
+          -ms-flex: 1;
+          flex: 1; }
+        .container > .body > .leftColumn > .groupContainer > .groupContainer > .proficiency {
+          -webkit-flex: 1;
+          -ms-flex: 1;
+          flex: 1; }
+        .container > .body > .leftColumn > .groupContainer > .groupContainer > .savingThrows {
+          -webkit-flex: 6;
+          -ms-flex: 6;
+          flex: 6; }
+        .container > .body > .leftColumn > .groupContainer > .groupContainer > .skills {
+          -webkit-flex: 18;
+          -ms-flex: 18;
+          flex: 18; }
+    .container > .body > .middleColumn {
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
+      .container > .body > .middleColumn > .statusBlock {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+        .container > .body > .middleColumn > .statusBlock > .groupContainer {
+          -webkit-flex: 1;
+          -ms-flex: 1;
+          flex: 1; }
+          .container > .body > .middleColumn > .statusBlock > .groupContainer > div {
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1; }
+      .container > .body > .middleColumn > .attacks {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1; }
+      .container > .body > .middleColumn > .equipment {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1; }
+    .container > .body > .rightColumn {
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
+      .container > .body > .rightColumn > .roleplayingBlock {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column; }
+
+/*# sourceMappingURL=sheet.css.map */
